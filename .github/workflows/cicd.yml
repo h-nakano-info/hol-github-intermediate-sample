@@ -20,6 +20,8 @@ jobs:
               run: dotnet restore ./src/SampleApplication.csproj
             - name: Build
               run: dotnet build ./src/ --no-restore
+            - name: Test
+              run: dotnet test ./src/ --no-build --verbosity normal
             - name: Publish
               run: dotnet publish ./src/SampleApplication.csproj -c Release -o ${{env.DOTNET_ROOT}}/webapp
             - name: Upload artifact
