@@ -1,7 +1,8 @@
 name: learn-github-actions-staging
 
 env:
-  AZURE_WEBAPP_NAME: app-nakano-hol-github-intermediate-samplef56g/nakano-test-in
+  AZURE_WEBAPP_NAME: 
+    app-nakano-hol-github-intermediate-samplef56g
   AZURE_WEBAPP_PACKAGE_PATH: '.'
 on:
     push:
